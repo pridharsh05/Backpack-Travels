@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BACKPACKTRAVEL</title>
+        <!-- ==== CSS ==== -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            
+            <ul class="nav-links">
+                <li class="ctn"><a href="#"></a>Home</li>
+                <li class="ctn"><a href="#"></a>Tours</li>
+                <li class="ctn"><a href="#"></a>Explore</li>
+                <li class="ctn"><a href="#"></a>About</li>
+                <li class="ctn"><a href="#"></a>Contact</li>
+            </ul>
+            <img src="" alt="" class="menu-btn">
+        </nav>
+  <ul></ul>      
+        <header>
+            <section class="details poster">
+                <div class="row">
+                    <div class="col">
+                        <img src="./poster.jpg" alt="">
+                        </div>
+                    </section>
+            <div class="header-content">
+                <h2>Explore The Colorful World</h2>
+                <div class="line"></div>
+                <h1>A WONDERFUL GIFT</h1>
+                <br>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h1>Find your Next tour!</h1>
+                </div>
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go?">
+                    <datalist id="mylist">
+                        <option>Ladakh</option>
+                        <option>Mussoorie</option>
+                        <option>Assam</option>
+                        <option>Goa</option>
+                        <option>Wagha</option>
+                        
+                    </datalist>
+                    <input type="date" class="date">
+                    <a href="#" class="book">book</a>
+                
+                </form>
+                <!---Confirm booking process-->
+                <h2>Confirm booking</h2>
+
+
+<button onclick="myFunction()">Confirm booking</button>
+
+<p id="demo"></p>
+<br>
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Confirm booking?")) {
+    txt = "Your booking is Confirmed! Happy journey!!!";
+  } else {
+    txt = "Your booking is Cancelled!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</div>
+        </section>
+
+        <!-- == Events == -->
+        <section class="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+                <p>Longing for a vacation and have no idea where to go? Backpack brings you the best opportunity to enjoy your holidays at different destinations across the world. With its amazing tour packages, your trip can be really exciting.</p>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <img src="./2.jfif" alt="">
+                    <h4>Everest Camp Trek</h4>
+                   <a href="#" class="ctn">Learn More</a>
+                </div>
+               
+                    <div class="col">
+                        <img src="./jeep.jfif" alt="">
+                        <h4>Flash jeep driver</h4>
+                        
+                        <a href="#" class="ctn">Learn More</a>
+                    </div>
+                <div class="col">
+                    <img src="./t3.jfif" alt="">
+                    <h4>Walking Holidays</h4>
+                    
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <div class="explore-content">
+                <h1>EXPLORE THE WORLD </h1>
+                <div class="line"></div>
+                <p>Is Trekking to Everest Base Camp on Your Bucket List? We Can Help! Top-Rated Treks. Affordable Pricing. Outstanding Customer Service. </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>UPCOMING TOURS & DESTINATION</h1>
+                    <div class="line"></div>
+                    <p>*7 GROUPS • 7 DAYS<br>
+                        Mussoorie Adventure & Rafting<br>2023<br>
+                        <br>
+                        *1 GROUP • 10 DAYS<br>
+                         Assam Bir Billing Adventure Camp 2023<br>
+                         <br>
+                         *1 GROUP • 10 DAYS<br>
+                         WAGHA Jispa Family Adventure Camp 2023<br>
+                         <br>
+                         *CUSTOMIZE YOUR OWN • 6 DAYS<br>
+                         Leh - Ladakh 2023<br><br>
+                         *2 GROUPS  • 6 DAYS<br>
+                         Goa- TREK<br></p></div>
+                   
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                       
+                        <div class="row">
+                            <div class="column">
+                              <img src="./9.jfif"  >
+                            </div>
+                            <div class="column">
+                              <img src="./t4.jfif"  >
+                            </div>
+                            <div class="column">
+                              <img src="./11.jpg" >
+                            </div>
+                            <div class="column">
+                                <img src="./t3.jfif">
+                              </div>
+                              
+                              
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+         
+        </section>
+
+
+        <section class="footer">
+            <p>665,TNagar,Cross view road,Chennai-008.| Email:bptravels@gmail.com</p>
+            
+            
+        </section>
+        <script>
+            const menuBtn=document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+
+</html>
